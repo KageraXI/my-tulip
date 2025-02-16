@@ -13,13 +13,14 @@
             background: url('image.png') no-repeat center center/cover;
             font-family: 'Playfair Display', serif;
             text-align: center;
+            margin: 0;
         }
         .container {
             padding: 20px;
             background: rgba(255, 240, 245, 0.9);
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            max-width: 600px;
+            max-width: 90%;
             border: 3px solid #d63384;
             position: relative;
         }
@@ -46,7 +47,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <audio autoplay loop volume="0.5">
+    <audio id="background-music" autoplay loop>
         <source src="earned_it.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
@@ -62,7 +63,9 @@
             could ever outshine the beauty of you.<br><br>
             Yours, Reaper
         </p>
-       
     </div>
+    <script>
+        document.getElementById('background-music').volume = 0.5;
+    </script>
 </body>
 </html>

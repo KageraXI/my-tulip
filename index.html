@@ -13,13 +13,14 @@
             background: url('image.png') no-repeat center center/cover;
             font-family: 'Playfair Display', serif;
             text-align: center;
+            margin: 0; /* Added to remove default margins */
         }
         .container {
             padding: 20px;
             background: rgba(255, 240, 245, 0.9);
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            max-width: 600px;
+            max-width: 90%; /* Changed from 600px to 90% for better responsiveness */
             border: 3px solid #d63384;
             position: relative;
         }
@@ -35,6 +36,10 @@
             display: inline-block;
             margin-top: 20px;
             cursor: pointer;
+            transition: background 0.3s; /* Added transition for hover effect */
+        }
+        .button:hover {
+            background-color: #a12c6e; /* Added hover effect */
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
@@ -42,7 +47,7 @@
 <body>
     <div class="container">
         <h1>My Special Valentine 💖</h1>
-        <a href="message.html" class="button">click here</a>
+        <a href="message.html" class="button">Click here</a>
     </div>
 </body>
 </html>

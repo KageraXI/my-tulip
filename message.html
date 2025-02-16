@@ -13,13 +13,14 @@
             background: url('image.png') no-repeat center center/cover;
             font-family: 'Playfair Display', serif;
             text-align: center;
+            margin: 0;
         }
         .container {
             padding: 20px;
             background: rgba(255, 240, 245, 0.9);
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            max-width: 600px;
+            max-width: 90%;
             border: 3px solid #d63384;
             position: relative;
         }
@@ -40,6 +41,10 @@
             display: inline-block;
             margin-top: 20px;
             cursor: pointer;
+            transition: background 0.3s;
+        }
+        .back-button:hover {
+            background-color: #a12c6e;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
